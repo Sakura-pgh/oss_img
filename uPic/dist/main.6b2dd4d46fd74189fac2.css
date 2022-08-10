@@ -1,0 +1,259 @@
+#single-spa-application\:pulse-portal-roles-permissions [data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+  max-width: 100%; /* Not required for horizontal scroll to trigger */
+  max-height: 100%; /* Needed for vertical scroll to trigger */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-content-wrapper::-webkit-scrollbar,
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-content:before,
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-content:after {
+  content: ' ';
+  display: table;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions [data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions [data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10px;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: black;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto;
+}
+
+/* Rtl support */
+#single-spa-application\:pulse-portal-roles-permissions [data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.blur {
+  filter: blur(15px);
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.blur.lazy-load-image-loaded {
+  filter: blur(0);
+  transition: filter .3s;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.blur > img {
+  opacity: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.blur.lazy-load-image-loaded > img {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.opacity {
+  opacity: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.opacity.lazy-load-image-loaded {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.black-and-white {
+  filter: grayscale(1);
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.black-and-white.lazy-load-image-loaded {
+  filter: grayscale(0);
+  transition: filter .3s;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.black-and-white > img {
+  opacity: 0;
+}
+
+#single-spa-application\:pulse-portal-roles-permissions .lazy-load-image-background.black-and-white.lazy-load-image-loaded > img {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+
+/*# sourceMappingURL=main.6b2dd4d46fd74189fac2.css.map*/
