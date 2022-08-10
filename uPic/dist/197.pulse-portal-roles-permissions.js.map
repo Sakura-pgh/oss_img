@@ -1,0 +1,1 @@
+{"version":3,"file":"197.pulse-portal-roles-permissions.js","mappings":"kJAEA,UAAeA,EAAf,C","sources":["webpack://roles-permissions/./src/components/animate/features.js"],"sourcesContent":["import { domMax } from 'framer-motion';\n\nexport default domMax;\n"],"names":["domMax"],"sourceRoot":""}
